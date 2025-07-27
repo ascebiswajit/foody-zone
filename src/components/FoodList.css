@@ -1,0 +1,106 @@
+.food-section {
+  padding: 30px;
+  text-align: center;
+}
+
+.food-header h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.food-header p {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.food-search {
+  padding: 12px 20px;
+  width: 280px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.food-filters {
+  margin: 20px 0;
+}
+
+.filter-btn {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  background: #eee;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: linear-gradient(to right, #f27121, #e94057);
+  color: white;
+}
+
+.food-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.food-card {
+  background: white;
+  padding: 20px;
+  width: 220px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.food-card:hover {
+  transform: translateY(-4px);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.food-name {
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.food-meta {
+  font-size: 14px;
+  color: #777;
+}
+
+.food-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f27121;
+  margin: 10px 0;
+}
+
+.add-btn {
+  background: linear-gradient(to right, #f27121, #e94057);
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.no-results {
+  color: #fff;
+  font-weight: bold;
+  margin-top: 20px;
+}
