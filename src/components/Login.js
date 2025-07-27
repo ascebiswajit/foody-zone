@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import './Login.css';
 
-function Login({ onLogin }) {
+function Login({ onLogin, switchToSignup }) {
   const [email, setEmail] = useState('');
 
-  const [fullName, setFullName] = useState('');
   const [password, setPassword] = useState('');
-  const [phone, setPhone] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,13 +17,7 @@ function Login({ onLogin }) {
       <h2>Foody Zone Login</h2>
       
       <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Enter your Full Name"
-          value={fullName}
-          onChange={(e) => setFullName(e.target.value)}
-          required
-        /><br />
+
         
          <input
           type="email"
@@ -34,13 +26,7 @@ function Login({ onLogin }) {
           onChange={(e) => setEmail(e.target.value)}
           required
         /><br />
-                 <input
-          type="tel"
-          placeholder="Enter your Mobile Number"
-          value={phone}
-          onChange={(e) => setPhone(e.target.value)}
-          required
-        /><br />
+
         <input
           type="password"
           placeholder="Password"
@@ -49,6 +35,16 @@ function Login({ onLogin }) {
           required
         /><br />
         <button type="submit">Login</button>
+        <p style={{ marginTop: '10px' }}>
+  Don’t have an account?{' '}
+  <span
+    style={{ cursor: 'pointer', textDecoration: 'underline' }}
+    onClick={switchToSignup}
+  >
+    Sign Up
+  </span>
+</p>
+
       </form>
     </div>
   );
